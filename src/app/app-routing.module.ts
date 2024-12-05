@@ -4,21 +4,28 @@ import { RouterModule, Routes } from '@angular/router';
 import { WelcomePageComponent } from './welcome-page/welcome-page.component';
 import { BasicComponent } from './basic/basic.component';
 import { OpinionatedComponent } from './opinionated/opinionated.component';
+import { ComponentsListComponent } from './components-list/components-list.component';
+import { ROUTES } from '../constants';
 
 const routes: Routes = [
 	{
-		title: 'Basic version',
-		path: '',
+		title: ROUTES.BASIC.title,
+		path: ROUTES.BASIC.path,
 		component: BasicComponent,
 	},
 	{
-		title: 'Opinionated version',
-		path: 'opinionated',
+		title: ROUTES.OPINIONATED.title,
+		path: ROUTES.OPINIONATED.path,
 		component: OpinionatedComponent,
 	},
 	{
-		title: 'Welcome Page',
-		path: 'welcome',
+		title: ROUTES.COMPONENTS.title,
+		path: ROUTES.COMPONENTS.path,
+		component: ComponentsListComponent,
+	},
+	{
+		title: ROUTES.WELCOME.title,
+		path: ROUTES.WELCOME.path,
 		component: WelcomePageComponent,
 	},
 ];

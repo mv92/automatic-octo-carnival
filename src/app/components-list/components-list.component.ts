@@ -6,5 +6,5 @@ import { Component } from '@angular/core';
 	styleUrls: ['./components-list.component.scss'],
 })
 export class ComponentsListComponent {
-
+	heading = 'A simple page to display the components';
 }

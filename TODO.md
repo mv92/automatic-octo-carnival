@@ -3,6 +3,7 @@
 - [x] init the project and create the basic layout
 
 - [ ] boilerplate
+	- [x] create the page and prepare the basics
 	- [ ] table component
 	- [ ] header button component to trigger the sorting
 	- [ ] utilities for getting the data
