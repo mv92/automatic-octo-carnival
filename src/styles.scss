@@ -1,1 +1,29 @@
 /* You can add global styles to this file, and also import other style files */
+@mixin css-triangle($size, $color, $direction) {
+	$hidden-part: $size solid transparent;
+	$visible-part: $size solid $color;
+
+	$border-top: $hidden-part;
+	$border-right: $hidden-part;
+	$border-bottom: $hidden-part;
+	$border-left: $hidden-part;
+
+	@if $direction == 'right' {
+		$border-right: $visible-part;
+		$border-left: none;
+	} @else if $direction == 'left' {
+		$border-left: $visible-part;
+		$border-right: none;
+	} @else if $direction == 'top' {
+		$border-top: $visible-part;
+		$border-bottom: none;
+	} @else if $direction == 'bottom' {
+		$border-bottom: $visible-part;
+		$border-top: none;
+	}
+
+	border-top: $border-top;
+	border-right: $border-right;
+	border-bottom: $border-bottom;
+	border-left: $border-left;
+}
