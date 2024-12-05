@@ -1,6 +1,14 @@
-# Ktt
+# KTT
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.2.16.
+
+## Install dependencies
+
+using `pnpm` because storage isn't unlimited and `pnpm` is the best for this case. Plus added benefit of having faster install times.
+
+```bash
+pnpm install
+```
 
 ## Development server
 
