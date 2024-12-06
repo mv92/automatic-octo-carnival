@@ -1,8 +1,12 @@
 <header>
 	<nav>
-		<a routerLink="/" routerLinkActive="active">Basic</a>
-		<a routerLink="/opinionated" routerLinkActive="active">Opinionated</a>
-		<a routerLink="/welcome" routerLinkActive="active">Welcome Page</a>
+		<a
+			*ngFor="let route of routes"
+			[routerLink]="route.path"
+			routerLinkActive="active"
+		>
+			{{ route.title }}
+		</a>
 	</nav>
 </header>
 

@@ -1,0 +1,32 @@
+@import 'src/styles';
+
+.btn {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 100%;
+	padding: var(--table-cell-padding);
+	background-color: inherit;
+	border: none;
+	cursor: pointer;
+	outline-width: 2px;
+	outline-offset: -2px;
+
+	&:active {
+		transform: translateY(1px);
+	}
+
+	&__icon {
+		opacity: 0;
+		@include css-triangle(5px, currentColor, bottom);
+
+		&.--asc,
+		&.--desc {
+			opacity: 0.5;
+		}
+
+		&.--desc {
+			@include css-triangle(5px, currentColor, top);
+		}
+	}
+}
