@@ -7,7 +7,7 @@ import { WelcomePageComponent } from './welcome-page/welcome-page.component';
 import { BasicComponent } from './basic/basic.component';
 import { OpinionatedComponent } from './opinionated/opinionated.component';
 import { ComponentsListComponent } from './components-list/components-list.component';
-import { ButtonWithIconComponent } from './button-with-icon/button-with-icon.component';
+import { ButtonComponent } from './button/button.component';
 
 @NgModule({
 	declarations: [
@@ -16,7 +16,7 @@ import { ButtonWithIconComponent } from './button-with-icon/button-with-icon.com
 		BasicComponent,
 		OpinionatedComponent,
 		ComponentsListComponent,
-		ButtonWithIconComponent,
+		ButtonComponent,
 	],
 	imports: [
 		BrowserModule,

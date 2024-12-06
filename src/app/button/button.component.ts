@@ -2,11 +2,11 @@ import { Component, EventEmitter, Input, Output, OnInit } from '@angular/core';
 import { ButtonClickEventValue, Sorting, SortingDirection } from 'src/types';
 
 @Component({
-	selector: 'app-button-with-icon',
-	templateUrl: './button-with-icon.component.html',
-	styleUrls: ['./button-with-icon.component.scss'],
+	selector: 'app-button',
+	templateUrl: './button.component.html',
+	styleUrls: ['./button.component.scss'],
 })
-export class ButtonWithIconComponent implements OnInit {
+export class ButtonComponent implements OnInit {
 	@Input() label!: string;
 	@Input() name!: string;
 	@Input() customIcon?: string;
