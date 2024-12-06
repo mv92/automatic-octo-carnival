@@ -1,4 +1,8 @@
 /* You can add global styles to this file, and also import other style files */
+:root {
+	--table-cell-padding: 8px;
+}
+
 @mixin css-triangle($size, $color, $direction) {
 	$hidden-part: $size solid transparent;
 	$visible-part: $size solid $color;

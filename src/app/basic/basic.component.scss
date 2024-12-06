@@ -1,0 +1,18 @@
+table {
+	margin-top: 24px;
+	width: 100%;
+	border-collapse: collapse;
+}
+
+th {
+	text-align: left;
+	background-color: #cccccc;
+}
+
+tr {
+	border-bottom: 1px solid #ccc;
+}
+
+td {
+	padding: var(--table-cell-padding);
+}

@@ -13,7 +13,7 @@ export enum SortingDirection {
 
 export type Sorting = SortingDirection | undefined;
 
-export interface ButtonClickEventValue {
+export interface ButtonClickEventValue<T = string> {
 	direction: Sorting;
-	name: string;
+	name: T;
 }

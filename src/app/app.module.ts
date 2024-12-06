@@ -6,7 +6,6 @@ import { AppComponent } from './app.component';
 import { WelcomePageComponent } from './welcome-page/welcome-page.component';
 import { BasicComponent } from './basic/basic.component';
 import { OpinionatedComponent } from './opinionated/opinionated.component';
-import { ComponentsListComponent } from './components-list/components-list.component';
 import { ButtonComponent } from './button/button.component';
 
 @NgModule({
@@ -15,7 +14,6 @@ import { ButtonComponent } from './button/button.component';
 		WelcomePageComponent,
 		BasicComponent,
 		OpinionatedComponent,
-		ComponentsListComponent,
 		ButtonComponent,
 	],
 	imports: [

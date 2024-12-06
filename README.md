@@ -1,5 +1,7 @@
 # KTT
 
+purpose of this project is just to try angular.
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli/tree/16.2.x) version 16.2.16.
 
 ## Install dependencies
